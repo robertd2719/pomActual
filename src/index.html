@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles1.css">
+</head>
+<body>
+<header>
+    <h2>Pomodoro</h2>
+</header>
+<main>
+    <div id="time-display">00:00</div>
+    <div class="buttonbar">
+        <button id="reset_long_button">Long Timer</button>
+        <button id="reset_medium_button">Short Timer</button>
+        <button id="start_button">START</button>
+    </div>
+</main>
+<div class="taskList">
+<!--    <h2 style="text-align: center; color: red">TASK LIST</h2>-->
+    <div class="task-entry">
+        <input type="text" name="new_task" id="new_task" placeholder="Add task">
+        <button id="addTaskButton">
+            +
+        </button>
+    </div>
+<!--    TASK LIST CONTAINER FOR ELEMENTS IN THE TASK LIST-->
+    <div class="task-list-container">
+        <ul class="task-list">
+
+        </ul>
+    </div>
+</div>
+<footer>
+
+</footer>
+
+<!--JS Scripts-->
+<script type="module" src="js/index.js"></script>
+</body>
+</html>

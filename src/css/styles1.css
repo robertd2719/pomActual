@@ -1,0 +1,126 @@
+:root{
+    --blue-pigment: #29339B;
+    --superior-blue: #74A4BC;
+    --opal: #B6D6CC;
+    --cream: #F1FEC6;
+    --deep-red: #FF3A20;
+    font-family: -apple-system, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    /*background-color: var(--deep-red);*/
+    background-image: linear-gradient(to right,var(--deep-red),var(--cream));
+    color: white;
+    margin-bottom: .1rem;
+    padding-left: .8rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#time-display{
+    font-weight: 300;
+    margin-top: 20%;
+    font-size: 3.1rem;
+}
+.buttonbar{
+    margin-top: 50px;
+}
+button{
+    margin: 0 2px;
+    outline: none;
+    padding: .5em 1em;
+    border: none;
+    font-weight: bold;
+    border-radius: .2rem;
+    font-size: .9rem;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(0.95);
+}
+.button_done{
+    background-color: var(--opal);
+}
+.button_delete{
+    background-color: var(--deep-red);
+}
+#reset_long_button{
+    background-color: var(--blue-pigment);
+    color: var(--cream);
+    cursor: pointer;
+}
+#reset_medium_button{
+    background-color: var(--opal);
+}
+#addTaskButton{
+    background-color: var(--opal);
+    color: var(--deep-red);
+}
+::-webkit-input-placeholder{
+    color:antiquewhite;
+}
+
+
+main{
+    height: 40vh;
+    width: 80%;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    padding: 1rem;
+    background-image: url("../images/tomatoIcon.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.taskList ul{
+    list-style: none;
+    cursor: pointer;
+}
+#new_task{
+    padding:7px;
+    outline: none;
+    border: none;
+    background-color: var(--superior-blue);
+    color: var(--cream);
+    font-weight: bold;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+#new_task:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.task-node{
+    background-color: wheat;
+    padding: 1em;
+    width: 100%;
+    color: var(--blue-pigment);
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.task-node:hover{
+    box-shadow: 5px 5px 5px grey;
+}
+.strike-through{
+    text-decoration: line-through;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to right,var(--deep-red),var(--cream));
+    height: 5vh;
+}
